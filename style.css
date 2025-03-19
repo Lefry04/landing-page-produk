@@ -1,0 +1,114 @@
+body {
+    font-family: 'Poppins', 'Outfit', 'Kanit';
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000, #ffffff);
+    min-height: 120vh;
+    padding-bottom: 80px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+header {
+    margin: 40px auto;
+    max-width: 800px;
+    color: white;
+}
+
+.hero-headline {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+section {
+    margin: 0px auto;
+    max-width: 800px;
+}
+
+/* section header {
+    width: 90%;
+    max-width: 800px;
+} */
+
+section img {
+    max-width: 100%;
+    height: auto;
+    /* float: right; */
+}
+
+.image-section {
+    animation: scaleUp 3s ease-out;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table img {
+    width: 100px;
+    height: auto;
+}
+
+table img:hover{
+    transform: scale(1.5);
+}
+
+button {
+    display: block;
+    width: 150px;
+    height: 40px;
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+footer {
+    padding: 0px 0px 10px 0px;
+    background-color: rgba(255, 255, 255, 0.209);
+    font-size: 14px;
+    color: #777;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
