@@ -6,15 +6,48 @@ body {
     background: linear-gradient(to bottom, #000000, #ffffff);
     min-height: 120vh;
     padding-bottom: 80px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
+    width: 100%;
 }
 
 header {
-    margin: 40px auto;
-    max-width: 800px;
+    margin: 150px auto;
+    max-width: 1000px;
     color: white;
+}
+
+.fix-top {
+    position: fixed;
+    top: 35px;
+    margin: 0px auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.fix-top button{
+    padding: 5px;
+    height: fit-content;
+    margin: 18.72px;
+    border-radius: 5px;
+}
+
+.nav-menu-inner {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 40px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#mekbuk {
+    background-color: rgba(0, 0, 0, 0.209);
+    border-radius: 8px;
+    margin-right: 40px;
+    width: fit-content;
+    align-self: center;
 }
 
 .hero-headline {
@@ -26,18 +59,12 @@ header {
 
 section {
     margin: 0px auto;
-    max-width: 800px;
+    max-width: 1000px;
 }
-
-/* section header {
-    width: 90%;
-    max-width: 800px;
-} */
 
 section img {
     max-width: 100%;
     height: auto;
-    /* float: right; */
 }
 
 .image-section {
@@ -49,6 +76,17 @@ p {
     color: #333;
     line-height: 1.6;
     text-align: left;
+}
+
+.description {
+    color: white;
+    padding: 0 15px;
+    font-size: 23px;
+}
+
+.content {
+    background-color: rgb(237, 237, 237);
+    border-radius: 20px;
 }
 
 table {
@@ -68,10 +106,10 @@ table img {
 }
 
 table img:hover{
-    transform: scale(1.5);
+    transform: scale(2);
 }
 
-button {
+.buy {
     display: block;
     width: 150px;
     height: 40px;
@@ -86,20 +124,24 @@ button {
     font-weight: bold;
 }
 
-button:hover {
+.buy:hover {
     background-color: #000000;
     color: #ffffff;
 }
 
 
 footer {
-    padding: 0px 0px 10px 0px;
     background-color: rgba(255, 255, 255, 0.209);
     font-size: 14px;
     color: #777;
     position: fixed;
     bottom: 0;
     width: 100%;
+    text-align: center;
+}
+
+footer p{
+    text-align: center;
 }
 
 @keyframes scaleUp {
@@ -112,3 +154,5 @@ footer {
         opacity: 1;
     }
 }
+
+
